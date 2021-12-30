@@ -1,0 +1,23 @@
+.desc {
+  margin-bottom: 300px;
+
+  &__container {
+    width: 100%;
+    max-width: 840px;
+    margin: auto;
+  }
+
+  &__text {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    margin: 0;
+    color: var(--color-gray-4);
+
+    span {
+      color: var(--color-gray-10);
+    }
+  }
+}
