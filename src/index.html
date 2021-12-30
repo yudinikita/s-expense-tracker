@@ -5,7 +5,7 @@
       "title-site": "Денежки • Самый легкий учет финансов",
       "meta": {
         "description": "Простой инструмент для учета расходов и доходов.",
-        "keywords": "финансовый менеджер, трекер расходов, расходы, доходы, учет финансов"
+        "keywords": "финансовый менеджер, трекер расходов, расходы, доходы, учет финансов, инструмент для финансов, личные финансы"
       }
     })
   </head>
@@ -13,11 +13,16 @@
   <body>
     @@include('partials/header.html')
     <main class="page-main">
-        @@include('partials/main.html')
+        @@include('partials/hero.html')
+        @@include('partials/desc.html')
+        @@include('partials/analytics.html')
+        @@include('partials/dark.html')
+        @@include('partials/features.html')
     </main>
     @@include('partials/footer.html')
 
-<!--<script src="js/vendor.js"></script>-->
-    <script src="js/main.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie_light.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
