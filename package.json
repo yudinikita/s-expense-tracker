@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/nblackninja/s-expense-tracker#readme",
   "devDependencies": {
+    "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",

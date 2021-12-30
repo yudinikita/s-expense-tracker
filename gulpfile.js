@@ -150,6 +150,8 @@ const htmlMinify = () => {
     .pipe(dest("build"));
 };
 
+const deploy = () => src("./build/**/*").pipe(ghPages());
+
 const toProd = (done) => {
   isProd = true;
   done();
@@ -177,3 +179,5 @@ exports.build = series(
 );
 
 exports.cache = series(cache, rewrite);
+
+exports.deploy = deploy;
