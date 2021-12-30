@@ -1,0 +1,38 @@
+.analytics {
+  display: block;
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+
+  &__content {
+    padding: 0 0 200px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-gray-10);
+  }
+
+  &__images {
+    padding: 120px 0 0 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 9%);
+    margin: 120px;
+
+    img {
+      border-radius: 20px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
