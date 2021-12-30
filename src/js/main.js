@@ -12,7 +12,7 @@ const featuresLottieFirst = bodymovin.loadAnimation({
   wrapper: featuresLottieFirstContainer,
   animType: "svg",
   loop: true,
-  path: "./first.json",
+  path: "./animations/first.json",
   rendererSettings: {
     progressiveLoad: true,
   },
@@ -22,7 +22,7 @@ const featuresLottieSecond = bodymovin.loadAnimation({
   wrapper: featuresLottieSecondContainer,
   animType: "svg",
   loop: true,
-  path: "./second.json",
+  path: "./animations/second.json",
   rendererSettings: {
     progressiveLoad: true,
   },
@@ -32,7 +32,7 @@ const featuresLottieThird = bodymovin.loadAnimation({
   wrapper: featuresLottieThirdContainer,
   animType: "svg",
   loop: true,
-  path: "./third.json",
+  path: "./animations/third.json",
   rendererSettings: {
     progressiveLoad: true,
   },
