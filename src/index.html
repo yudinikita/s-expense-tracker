@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @@include('partials/head.html', {
+      "title-site": "Денежки • Самый легкий учет финансов",
+      "meta": {
+        "description": "Простой инструмент для учета расходов и доходов.",
+        "keywords": "финансовый менеджер, трекер расходов, расходы, доходы, учет финансов"
+      }
+    })
+  </head>
+
+  <body>
+    @@include('partials/header.html')
+    <main class="page-main">
+        @@include('partials/main.html')
+    </main>
+    @@include('partials/footer.html')
+
+<!--<script src="js/vendor.js"></script>-->
+    <script src="js/main.js" async defer></script>
+  </body>
+</html>
