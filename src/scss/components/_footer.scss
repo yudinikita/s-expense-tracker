@@ -27,3 +27,12 @@
     }
   }
 }
+
+@media (max-width: 520px) {
+  .footer {
+    &__btn {
+      width: 300px;
+      font-size: 22px;
+    }
+  }
+}
