@@ -68,3 +68,27 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+.subtitle {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 120%;
+}
+
+@media (max-width: 1400px) {
+  .subtitle {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 960px) {
+  .subtitle {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .subtitle {
+    font-size: 40px;
+  }
+}
