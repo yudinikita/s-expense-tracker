@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    @@include('partials/head.html', {
+    @@include('partials/head/head.html', {
       "title-site": "Денежки • Самый легкий учет финансов",
       "meta": {
         "description": "Простой инструмент для учета расходов и доходов.",
@@ -11,18 +11,16 @@
   </head>
 
   <body>
-    @@include('partials/header.html')
+    @@include('partials/head/header.html')
     <main class="page-main">
-        @@include('partials/hero.html')
-        @@include('partials/desc.html')
-        @@include('partials/statistic.html')
-        @@include('partials/dark.html')
-        @@include('partials/features.html')
+        @@include('partials/main/hero.html')
+        @@include('partials/main/desc.html')
+        @@include('partials/main/statistic.html')
+        @@include('partials/main/dark.html')
+        @@include('partials/main/features.html')
     </main>
-    @@include('partials/footer.html')
+    @@include('partials/footer/footer.html')
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie_light.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="js/main.js" defer></script>
+    @@include('partials/footer/scripts.html')
   </body>
 </html>
