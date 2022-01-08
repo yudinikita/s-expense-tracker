@@ -36,3 +36,44 @@
     }
   }
 }
+
+@media (max-width: 1400px) {
+  .hero {
+    &__title {
+      font-size: 70px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    &__title {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .hero {
+    &__title {
+      font-size: 40px;
+    }
+
+    &__images {
+      flex-direction: column;
+    }
+
+    &__image {
+      margin: 60px auto;
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .hero {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
