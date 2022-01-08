@@ -1,5 +1,5 @@
-@import "normalize";
-@import "vars";
-@import "mixins";
-@import "fonts";
-@import "settings";
+@import "./globals/normalize";
+@import "./globals/vars";
+@import "./globals/mixins";
+@import "./globals/fonts";
+@import "./globals/settings";
