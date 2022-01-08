@@ -92,3 +92,16 @@
     }
   }
 }
+
+@media (max-width: 780px) {
+  .navbar {
+    &__btn,
+    &__btn-fake {
+      display: none;
+    }
+
+    &__menu {
+      padding: 0;
+    }
+  }
+}
