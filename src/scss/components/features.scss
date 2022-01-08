@@ -10,10 +10,6 @@
   }
 
   &__title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 80px;
-    line-height: 120%;
     text-align: center;
     color: var(--color-gray-10);
   }
@@ -22,6 +18,11 @@
     padding: 150px 0 0 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 auto;
+    }
   }
 
   &__image {
@@ -54,6 +55,16 @@
 
       &:hover {
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .features {
+    &__list {
+      li {
+        margin: 30px auto;
       }
     }
   }
