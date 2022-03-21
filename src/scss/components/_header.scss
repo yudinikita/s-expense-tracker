@@ -38,12 +38,12 @@
     color: var(--color-gray-7);
     padding-right: 25px;
 
-    &-list {
-      display: flex;
-      align-items: center;
+    &-lng {
+      margin-right: 30px;
 
-      a {
+      button {
         padding: 15px 15px;
+        text-transform: uppercase;
 
         &:hover {
           color: var(--color-other-blue);
@@ -54,6 +54,11 @@
           text-decoration: underline;
         }
       }
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
     }
   }
 

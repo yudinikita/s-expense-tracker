@@ -16,11 +16,13 @@
             <nav class="navbar__menu">
               <ul class="navbar__menu-list list-reset">
                 <li>
-                  <a href="#">EN</a>
+                  <div class="navbar__menu-lng">
+                    <button class="btn-reset" value="ru" onclick="toggleLng(this)">EN</button>
+                  </div>
                 </li>
                 <li>
                   <a href="https://app.expense-tracker.cf/login">
-                    Вход
+                    <intl-message label="signin"></intl-message>
                   </a>
                 </li>
               </ul>
@@ -28,7 +30,7 @@
             <div class="navbar__btn-fake"></div>
             <div class="navbar__btn">
               <a class="navbar__btn-link" href="https://app.expense-tracker.cf/registration">
-                Начать вести учет
+                <intl-message label="signup"></intl-message>
               </a>
             </div>
           </div>

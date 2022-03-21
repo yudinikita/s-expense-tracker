@@ -13,3 +13,96 @@
   });
   wow.init()
 </script>
+
+<script type="text/javascript">
+  function toggleLng(button) {
+
+    if (button.value == "ru") {
+      button.innerHTML = 'ru';
+      button.value = 'en';
+      i18next.changeLanguage('en');
+    } else {
+      button.innerHTML = 'en';
+      button.value = 'ru';
+      i18next.changeLanguage('ru');
+    }
+  }
+</script>
+
+<script src="https://unpkg.com/i18next@19/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-wc/dist/intl-message.js"></script>
+
+<script>
+    const resources = {
+      ru: {
+        default: {
+          signin: 'Вход',
+          signup: 'Начать вести учет',
+          hero: {
+            title: "Простой инструмент для учета расходов и доходов"
+          },
+          desc: '<span>Подойдет для людей</span>, желающих вести учет своих трат и понимать, на что они тратят денег больше всего, не разбираясь в сложных системах.',
+          statistic: {
+            title: 'Понятная аналитика'
+          },
+          dark: {
+            title: 'Ночная тема'
+          },
+          features: {
+            title: 'Три причины пользоваться',
+            first: {
+              title: 'Удобство',
+              desc: 'Простой, понятный и аккуратный интерфейс'
+            },
+            second: {
+              title: 'Открытость',
+              desc: 'Открытый <a href="https://github.com/nblackninja/expense-tracker" target="_blank" rel="noopener">исходный код</a>. Бесплатно и без подписок.'
+            },
+            third: {
+              title: 'Синхронизация',
+              desc: 'Доступ с нескольких устройств одновременно'
+            },
+          }
+        }
+      },
+      en: {
+        default: {
+          signin: 'Sign In',
+          signup: 'Sign Up',
+          hero: {
+            title: "A simple tool for recording expenses and income"
+          },
+          desc: '<span>Suitable for people</span> who want to keep track of their spending and understand what they spend the most money on, without having to deal with complicated systems.',
+          statistic: {
+            title: 'Comprehensible analytics'
+          },
+          dark: {
+            title: 'Dark mode'
+          },
+          features: {
+            title: 'Three reasons to use',
+            first: {
+              title: 'Convenience',
+              desc: 'Simple, clear and neat interface'
+            },
+            second: {
+              title: 'Public',
+              desc: 'Open <a href="https://github.com/nblackninja/expense-tracker" target="_blank" rel="noopener">source</a>. Free and no subscriptions.'
+            },
+            third: {
+              title: 'Synchronization',
+              desc: 'Access from multiple devices simultaneously'
+            },
+          }
+        }
+      }
+    }
+    
+  i18next.init({
+    lng: "ru",
+    fallbackLng: "ru",
+    resources: resources,
+    defaultNS: "default",
+    fallbackNS: "global"
+  })
+</script>
